@@ -172,7 +172,11 @@ html{
     -o-transform: translateX(10px);
 }
 
+.container{
+    overflow-x: hidden;
+}
 /* Main Div */
+
 .sub-container{
     max-width: 900px;
 }
@@ -189,6 +193,33 @@ html{
     -ms-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
     transform-origin: 0% 0%;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+}
+
+#window-nav{
+    transition: 0.8s all ease-in-out;
+    -webkit-transition: 0.8s all ease-in-out;
+    -moz-transition: 0.8s all ease-in-out;
+    -ms-transition: 0.8s all ease-in-out;
+    -o-transition: 0.8s all ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+
+#window-nav i{
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
 }
 
 #about{
@@ -201,4 +232,10 @@ html{
 
 #span, #text{
     display: inline;
+}
+
+.window-nav{
+    text-align: right;
+    width: 90%;
+    background-color: #eee;
 }

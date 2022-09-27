@@ -8,9 +8,12 @@ sections.push(document.getElementById("projects"));
 sections.push(document.getElementById("positions"));
 
 var main = document.getElementById("main");
+var windowNav = document.getElementById("window-nav");
 
 function goToSection(x) {
-    main.style.transform="translateX(300px) scale(0.8)";
+    main.style.transform="translateX(300px)";
+    windowNav.style.transform="translateX(300px)";
+    // main.style.left="400px";
     // main.style.transform="rotate(-60deg)";
     setTimeout(() => {
         for (let i = 0; i < sections.length; i++) {
@@ -27,9 +30,38 @@ function goToSection(x) {
             }
             main.style.background = colors[x];
         }
-        main.style.transform="translateX(0px) scale(1)";
+        main.style.transform="translateX(0px) ";
+        windowNav.style.transform="translateX(0px) ";
+        // main.style.left="0px";
         // main.style.transform="rotate(0deg)";
     }, 1000);
+}
+
+// Maximize button
+
+var isMaximized = false;
+const mainContainer = document.getElementById("mainContainer");
+const mainContainerStyles = mainContainer.style;
+
+function maximize() {
+    if(!isMaximized){
+        mainContainer.style.position = "absolute";
+        mainContainer.style.zIndex = 1000;
+        mainContainer.style.left = 0;
+        mainContainer.style.top = 0;
+        mainContainer.style.width = "100vw";
+        mainContainer.style.height = "100vh";
+        windowNav.style.width = "100%";
+        main.style.width = "100%";
+    }
+    else{
+        mainContainer.style.position = "relative";
+        // mainContainer.style.width = "100%";
+        // mainContainer.style.height = "100%";
+        windowNav.style.width = "90%";
+        main.style.width = "90%";
+    }
+    isMaximized = isMaximized^1;
 }
 
 
