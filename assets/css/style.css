@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: transparent;
 }
 
+html{
+    background-color: rgb(10, 10, 54);
+}
 
 /* Utility Classes */
 
@@ -55,7 +59,6 @@
 .heading{
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .info{
@@ -130,6 +133,17 @@
 
 .sub-heading{
     font-size: 18px;
+    margin: 5px 0px;
+    color: #aaa;
+}
+
+.typer{
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    /* font-weight: 500; */
 }
 
 .links{
@@ -143,6 +157,19 @@
     text-decoration: none;
     font-size: 21px;
     cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+}
+
+.links a:hover{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
 }
 
 /* Main Div */
@@ -154,51 +181,24 @@
     max-width: 395px;
 }
 
-#about{
+#main{
     background-color: #81ecec;
-    transition: 0.3s all ease-in-out;
-    -webkit-transition: 0.3s all ease-in-out;
-    -moz-transition: 0.3s all ease-in-out;
-    -ms-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transform-origin: 0% 0%;
 }
 
-#education{
-    background-color: #fab1a0;
-    display: none;
-    transition: 0.3s all ease-in-out;
-    -webkit-transition: 0.3s all ease-in-out;
-    -moz-transition: 0.3s all ease-in-out;
-    -ms-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
+#about{
+    
 }
 
-#skills{
-    background-color: #fdcb6e;
+#education, #skills, #projects, #positions{
     display: none;
-    transition: 0.3s all ease-in-out;
-    -webkit-transition: 0.3s all ease-in-out;
-    -moz-transition: 0.3s all ease-in-out;
-    -ms-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
 }
 
-#projects{
-    background-color: #74b9ff;
-    display: none;
-    transition: 0.3s all ease-in-out;
-    -webkit-transition: 0.3s all ease-in-out;
-    -moz-transition: 0.3s all ease-in-out;
-    -ms-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
-}
-
-#positions{
-    background-color: #55efc4;
-    display: none;
-    transition: 0.3s all ease-in-out;
-    -webkit-transition: 0.3s all ease-in-out;
-    -moz-transition: 0.3s all ease-in-out;
-    -ms-transition: 0.3s all ease-in-out;
-    -o-transition: 0.3s all ease-in-out;
+#span, #text{
+    display: inline;
 }
