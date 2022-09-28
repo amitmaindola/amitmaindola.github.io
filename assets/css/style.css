@@ -179,6 +179,7 @@ html{
 
 .sub-container{
     max-width: 900px;
+    width: 100%;
 }
 
 .btn-wrap{
@@ -231,11 +232,18 @@ html{
 }
 
 #about{
-    
+    padding: 10px 0px;
+    overflow-y: scroll;
+    max-height: 90vh;
+
+    /* display: none; */
 }
 
 #education, #skills, #projects, #positions{
+    padding: 10px 0px;
+    overflow-y: scroll;
     display: none;
+    max-height: 90vh;
 }
 
 #span, #text{
@@ -252,5 +260,45 @@ html{
 #terminal{
     z-index: 100;
     background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
     display: none;
+}
+
+/* Education */
+.university{
+    margin-top: 30px;
+}
+.university-name{
+    font-size: 28px;
+    font-weight: 500;
+}
+.degree{
+    font-size: 18px;
+}
+.duration{
+    color: rgb(165, 36, 36);
+}
+
+.course-heading{
+    color: #333;
+    font-size: 16px;
+}
+
+.course-works{
+    margin-top: 10px;
+}
+
+.course-list li{
+    margin: 5px 15px;
+    list-style-type: none;
+    color: #222;
+    padding: 2px 5px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
