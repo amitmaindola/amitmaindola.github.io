@@ -5,6 +5,7 @@
     padding: 0px;
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 html{
@@ -100,11 +101,35 @@ html{
     height: 100vh;
     color: white;
     position: fixed;
+    transition: 0.3s all ease-in-out;
+    /*display: none;
+    */:;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
 }
 
 .navSpace{
     min-width: 280px;
     height: 100vh;
+    /* display: none; */
+}
+
+.navIcon{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(10, 10, 54);
+    left: 10px;
+    top: 5px;
+    display: none;
+}
+
+#navIcon{
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
 }
 
 .profile-info{
@@ -139,10 +164,11 @@ html{
 
 .typer{
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: 'Orbitron', sans-serif;
     margin-top: 5px;
     letter-spacing: 2px;
+    height: 50px;
     /* font-weight: 500; */
 }
 
@@ -153,7 +179,7 @@ html{
 }
 
 .links a{
-    color: white;
+    color: #ddd;
     text-decoration: none;
     font-size: 21px;
     cursor: pointer;
@@ -171,6 +197,18 @@ html{
     -ms-transform: translateX(10px);
     -o-transform: translateX(10px);
 }
+
+.profile-info .icons{
+    width: 120px;
+    margin-top: 5px;
+}
+
+.profile-info .icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #bbb;
+}
+
 
 .container{
     overflow-x: hidden;
@@ -210,6 +248,7 @@ html{
     -moz-transition: all 0.8s ease-in-out;
     -ms-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
+    height: 100vh;
 }
 
 #window-nav{
@@ -229,18 +268,16 @@ html{
     display: inline-block;
     padding: 5px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 #about{
-    padding: 10px 0px;
     overflow-y: scroll;
     max-height: 90vh;
-
     /* display: none; */
 }
 
 #education, #skills, #projects, #positions{
-    padding: 10px 0px;
     overflow-y: scroll;
     display: none;
     max-height: 90vh;
@@ -301,4 +338,32 @@ html{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 700px) {
+    .navSpace{
+        display: none;
+    }
+    .nav{
+        transform: translateX(-300px);
+        -webkit-transform: translateX(-300px);
+        -moz-transform: translateX(-300px);
+        -ms-transform: translateX(-300px);
+        -o-transform: translateX(-300px);
+        z-index: 1000;
+    }
+    .navIcon{
+        display: block;
+        z-index: 1001;
+    }
+    #mainContainer{
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
 }

@@ -76,6 +76,18 @@ function exit() {
     windowNav.style.opacity=0;
 }
 
+
+
+// Navigation Bar in mobile
+
+var open = false;
+const nav = document.querySelector(".nav");
+function toggleNav() {
+    if(!open) nav.style.transform = "translateX(0px)";
+    else nav.style.transform = "translateX(-300px)";
+    open = open^1;
+}
+
 // For typer effect
 var text="";
 const fullText1 = "< Competetive Programmer_/>";
