@@ -230,8 +230,8 @@ html{
 }
 
 #main{
-    /* background-color: #81ecec; */
-    background-color: white;
+    /*background-color: #81ecec;
+    */background-color: white;
     transition: all 0.8s ease-in-out;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
@@ -268,13 +268,20 @@ html{
     -moz-border-radius: 10px 10px 0px 0px;
     -ms-border-radius: 10px 10px 0px 0px;
     -o-border-radius: 10px 10px 0px 0px;
+    padding-left: 10px;
 }
 
 #window-nav i{
+    font-size: 10px;
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
-    margin-top: 5px;
+    margin: 5px 2px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 #about{
@@ -294,11 +301,29 @@ html{
 }
 
 .window-nav{
-    text-align: right;
+    text-align: left;
     width: 90%;
     background-color: #eee;
 }
 
+.red{
+    color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 0.8);
+    width: 14px;
+    text-align: center;
+}
+.yellow{
+    color: rgba(230, 230, 0, 0.8);
+    background-color: rgba(230, 230, 0, 0.8);
+}
+.green{
+    color: rgba(0, 255, 0, 0.9);
+    background-color: rgba(0, 255, 0, 0.9);
+}
+
+.red:hover, .green:hover, .yellow:hover{
+    color: black;
+}
 /* Terminal */
 #terminal{
     z-index: 100;
