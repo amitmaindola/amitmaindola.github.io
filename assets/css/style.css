@@ -6,6 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
     box-sizing: border-box;
+    color: #666;
 }
 
 html{
@@ -64,6 +65,7 @@ html{
 .heading{
     font-size: 48px;
     font-weight: 700;
+    color: #444;
 }
 
 .info{
@@ -158,12 +160,13 @@ html{
 
 .name{
     font-size: 25px;
+    color: #eee;
 }
 
 .sub-heading{
     font-size: 18px;
     margin: 5px 0px;
-    color: #aaa;
+    color: #ccc;
 }
 
 .typer{
@@ -210,7 +213,9 @@ html{
 .profile-info .icons a{
     text-decoration: none;
     font-size: 20px;
-    color: #bbb;
+}
+.profile-info .icons a i{
+    color: #dde;
 }
 
 
@@ -341,6 +346,7 @@ html{
 .university-name{
     font-size: 28px;
     font-weight: 500;
+    color: #333;
 }
 .degree{
     font-size: 18px;
