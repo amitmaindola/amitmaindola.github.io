@@ -11,8 +11,11 @@ var main = document.getElementById("main");
 var windowNav = document.getElementById("window-nav");
 
 function goToSection(x) {
+    mainContainer.style.opacity=1;
     main.style.transform="translateX(300px)";
     windowNav.style.transform="translateX(300px)";
+    main.style.opacity=1;
+    windowNav.style.opacity=1;
     // main.style.left="400px";
     // main.style.transform="rotate(-60deg)";
     setTimeout(() => {
@@ -41,7 +44,6 @@ function goToSection(x) {
 
 var isMaximized = false;
 const mainContainer = document.getElementById("mainContainer");
-const mainContainerStyles = mainContainer.style;
 
 function maximize() {
     if(!isMaximized){
@@ -64,6 +66,15 @@ function maximize() {
     isMaximized = isMaximized^1;
 }
 
+
+// Exit button
+
+function exit() {
+    main.style.transform = "translateX(1000px)";
+    windowNav.style.transform = "translateX(1000px)";
+    main.style.opacity=0;
+    windowNav.style.opacity=0;
+}
 
 // For typer effect
 var text="";
