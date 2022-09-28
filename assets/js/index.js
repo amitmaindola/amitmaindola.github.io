@@ -1,3 +1,16 @@
+
+// Navigation Bar in mobile
+
+var open = false;
+const nav = document.querySelector(".nav");
+function toggleNav() {
+    if(!open) nav.style.transform = "translateX(0px)";
+    else nav.style.transform = "translateX(-300px)";
+    open = open^1;
+}
+
+// Switching section
+
 var sections = [];
 var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
 var links = document.querySelectorAll(".navLink");
@@ -35,6 +48,10 @@ function goToSection(x) {
         }
         main.style.transform="translateX(0px) ";
         windowNav.style.transform="translateX(0px) ";
+        if(open){
+            toggleNav();
+            open = false;
+        }
         // main.style.left="0px";
         // main.style.transform="rotate(0deg)";
     }, 1000);
@@ -77,16 +94,6 @@ function exit() {
 }
 
 
-
-// Navigation Bar in mobile
-
-var open = false;
-const nav = document.querySelector(".nav");
-function toggleNav() {
-    if(!open) nav.style.transform = "translateX(0px)";
-    else nav.style.transform = "translateX(-300px)";
-    open = open^1;
-}
 
 // For typer effect
 var text="";
