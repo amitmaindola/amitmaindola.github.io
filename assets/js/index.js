@@ -12,7 +12,9 @@ function toggleNav() {
 // Switching section
 
 var sections = [];
-var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
+// var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
+var colors = ["white", "white", "white", "white", "white"];
+// var colors = ["#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff"]
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
 sections.push(document.getElementById("education"));
@@ -92,6 +94,7 @@ function exit() {
     main.style.opacity=0;
     windowNav.style.opacity=0;
 }
+
 
 
 

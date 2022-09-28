@@ -230,7 +230,8 @@ html{
 }
 
 #main{
-    background-color: #81ecec;
+    /* background-color: #81ecec; */
+    background-color: white;
     transition: all 0.8s ease-in-out;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
