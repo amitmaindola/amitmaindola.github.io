@@ -289,14 +289,14 @@ html{
     -o-border-radius: 100%;
 }
 
-#skills{
+#about{
     overflow-y: scroll;
     max-height: 90vh;
     /* display: none; */
     /* background-color: #e7ecff; */
 }
 
-#education, #about, #projects, #positions{
+#education, #skills, #projects, #positions{
     overflow-y: scroll;
     display: none;
     max-height: 90vh;
