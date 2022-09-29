@@ -13,7 +13,7 @@ function toggleNav() {
 
 var sections = [];
 // var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
-var colors = ["white", "white", "#d7ecff", "white", "white"];
+var colors = ["white", "white", "#white", "white", "white"];
 // var colors = ["#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff"]
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
