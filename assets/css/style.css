@@ -289,13 +289,14 @@ html{
     -o-border-radius: 100%;
 }
 
-#about{
+#skills{
     overflow-y: scroll;
     max-height: 90vh;
     /* display: none; */
+    /* background-color: #e7ecff; */
 }
 
-#education, #skills, #projects, #positions{
+#education, #about, #projects, #positions{
     overflow-y: scroll;
     display: none;
     max-height: 90vh;
@@ -357,19 +358,23 @@ html{
 
 .course-heading{
     color: #333;
-    font-size: 16px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
-.course-works{
-    margin-top: 10px;
+.course-list i{
+    font-size: 50px;
+    margin: 0px 20px 10px;
 }
 
 .course-list li{
-    margin: 5px 15px;
+    margin: 5px 8px;
     list-style-type: none;
     color: #222;
     padding: 2px 5px;
     border: 1px solid #222;
+    background-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
