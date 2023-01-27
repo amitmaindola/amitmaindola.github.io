@@ -10,7 +10,10 @@
 }
 
 html{
-    background-color: rgb(109, 109, 187);
+    /* background-color: #4481eb; */
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -108,18 +111,18 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: rgb(44, 68, 163);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100vh;
     color: white;
     position: fixed;
-    transition: 0.8s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     /*display: none;
     */
     padding: 10% 0px;
-    -webkit-transition: 0.8s all ease-in-out;
-    -moz-transition: 0.8s all ease-in-out;
-    -ms-transition: 0.8s all ease-in-out;
-    -o-transition: 0.8s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
 }
 
 .navSpace{
@@ -160,7 +163,7 @@ html{
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    background-image: url("../images/index.jpeg");
+    background-image: url("../images/profile-pic.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -195,7 +198,7 @@ html{
 }
 
 .links a{
-    color: rgb(255, 255, 255);
+    color: #ccf;
     text-decoration: none;
     font-size: 21px;
     cursor: pointer;
@@ -245,12 +248,13 @@ html{
 
 #main{
     /*background-color: #81ecec;
-    */background-color: white;
-    transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
+    */
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transform-origin: 0% 0%;
     position: relative;
     height: 80%;
@@ -263,20 +267,20 @@ html{
 }
 
 #mainContainer{
-    transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     height: 100vh;
 }
 
 #window-nav{
-    transition: 0.8s all ease-in-out;
-    -webkit-transition: 0.8s all ease-in-out;
-    -moz-transition: 0.8s all ease-in-out;
-    -ms-transition: 0.8s all ease-in-out;
-    -o-transition: 0.8s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
     border-radius: 10px 10px 0px 0px;
     -webkit-border-radius: 10px 10px 0px 0px;
     -moz-border-radius: 10px 10px 0px 0px;
@@ -405,6 +409,10 @@ html{
         -ms-transform: translateX(-300px);
         -o-transform: translateX(-300px);
         z-index: 1001;
+        /* background-color: rgb(44, 68, 163); */
+        background:  linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.2)), url('../images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .navIcon{
         display: block;

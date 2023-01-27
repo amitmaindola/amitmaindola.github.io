@@ -3,6 +3,7 @@
 
 var open = false;
 const nav = document.querySelector(".nav");
+
 function toggleNav() {
     if(!open) nav.style.transform = "translateX(0px)";
     else nav.style.transform = "translateX(-300px)";
@@ -25,21 +26,25 @@ sections.push(document.getElementById("positions"));
 var main = document.getElementById("main");
 var windowNav = document.getElementById("window-nav");
 
-function goToSection(x) {
+
+async function goToSection(x) {
     mainContainer.style.opacity=1;
     main.style.opacity=1;
     windowNav.style.opacity=1;
-
+    nav.style.transform = "";
+    open = false;
     setTimeout(() => {
         for (let i = 0; i < sections.length; i++) {
             const element = sections[i];
             if(i==x){
                 element.style.display = "flex";
-                links[i].style.color="#ccf";
+                links[i].style.color="#fff";
+                // links[i].style.transform = "scale(1.1)";
             }
             else{
                 element.style.display="none";
-                links[i].style.color = "#fff";
+                links[i].style.color = "#ccf";
+                // links[i].style.transform = "scale(1)";
             }
             main.style.background = colors[x];
         }
@@ -83,8 +88,6 @@ function maximize() {
 // Exit button
 
 function exit() {
-    main.style.transform = "translateX(1000px)";
-    windowNav.style.transform = "translateX(1000px)";
     main.style.opacity=0;
     windowNav.style.opacity=0;
 }
