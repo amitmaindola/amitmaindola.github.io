@@ -13,7 +13,7 @@ function toggleNav() {
 
 var sections = [];
 // var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
-var colors = ["white", "white", "#white", "white", "white"];
+// var colors = ["white", "white", "#white", "white", "white"];
 // var colors = ["#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff"]
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
@@ -27,36 +27,22 @@ var windowNav = document.getElementById("window-nav");
 
 function goToSection(x) {
     mainContainer.style.opacity=1;
-    main.style.transform="translateX(300px)";
-    windowNav.style.transform="translateX(300px)";
     main.style.opacity=1;
     windowNav.style.opacity=1;
-    // main.style.left="400px";
-    // main.style.transform="rotate(-60deg)";
+
     setTimeout(() => {
         for (let i = 0; i < sections.length; i++) {
             const element = sections[i];
             if(i==x){
                 element.style.display = "flex";
-                // links[i].style.borderBottom = "2px dashed #ccf";
-                links[i].style.color="#ccf";
+                links[i].style.color="#00c";
             }
             else{
                 element.style.display="none";
-                // links[i].style.borderBottom = "none";
-                links[i].style.color = "#fff";
+                links[i].style.color = "var(--darkModeLink)";
             }
-            main.style.background = colors[x];
         }
-        main.style.transform="translateX(0px) ";
-        windowNav.style.transform="translateX(0px) ";
-        if(open){
-            toggleNav();
-            open = false;
-        }
-        // main.style.left="0px";
-        // main.style.transform="rotate(0deg)";
-    }, 1000);
+    }, 0);
 }
 
 // Maximize button
@@ -74,6 +60,10 @@ function maximize() {
         mainContainer.style.height = "100vh";
         windowNav.style.width = "100%";
         main.style.width = "100%";
+        main.style.height = "100%";
+        windowNav.style.borderRadius="0px"
+        mainContainer.style.borderRadius="0px"
+        main.style.borderRadius="0px";
     }
     else{
         mainContainer.style.position = "relative";
@@ -81,6 +71,9 @@ function maximize() {
         // mainContainer.style.height = "100%";
         windowNav.style.width = "90%";
         main.style.width = "90%";
+        main.style.height = "80%";
+        windowNav.style.borderRadius = "10px 10px 0px 0px";
+        main.style.borderRadius = " 0px 0px 10px 10px";
     }
     isMaximized = isMaximized^1;
 }

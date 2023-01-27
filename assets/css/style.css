@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+:root{
+    /* --darkModeBg: rgb(24, 23, 23);
+    --darkModeWindowNav: rgb(70, 59, 59);
+    --darkModeWindow: rgb(94, 84, 84);
+    --darkModeHeading: rgb(241, 241, 241);
+    --darkModeText: rgb(255, 255, 255);
+    --darkModeBtn: rgb(197, 191, 219);
+    --darkModeLink: rgb(233, 237, 255); */
+    --darkModeBg: rgb(53, 50, 50);
+    --darkModeWindowNav: rgb(255, 255, 255);
+    --darkModeWindow: rgb(248, 239, 239);
+    --darkModeHeading: rgb(255, 84, 84);
+    --darkModeText: rgb(66, 55, 55);
+    --darkModeBtn: rgb(255, 84, 84);
+    --darkModeLink: rgb(112, 118, 144);
+    --darkModeSideNavBg: #eee;
+    --darkModeActiveBtn: #00c;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
     box-sizing: border-box;
-    color: #666;
+    color: var(--darkModeText);
 }
 
 html{
-    background-color: rgb(10, 10, 54);
+    background-color: var(--darkModeBg);
 }
+
 
 /* Utility Classes */
 
@@ -65,7 +85,7 @@ html{
 .heading{
     font-size: 48px;
     font-weight: 700;
-    color: #444;
+    color: var(--darkModeHeading);
 }
 
 .info{
@@ -89,12 +109,12 @@ html{
 
 .btn-primary{
     border: none;
-    background-color: rgb(63, 171, 63);
-    color: white;
+    background-color: var(--darkModeBtn);
+    color: #fff;
 }
 
 .btn-secondary{
-    color: rgb(63, 171, 63);
+    color: var(--darkModeBtn);
 }
 
 .btn-icon{
@@ -103,13 +123,14 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: rgb(10, 10, 54);
+    background-color: var(--darkModeSideNavBg);
     height: 100vh;
-    color: white;
+    color: var(--darkModeText);
     position: fixed;
     transition: 0.8s all ease-in-out;
     /*display: none;
-    */:;
+    */
+    padding: 10% 0px;
     -webkit-transition: 0.8s all ease-in-out;
     -moz-transition: 0.8s all ease-in-out;
     -ms-transition: 0.8s all ease-in-out;
@@ -126,13 +147,14 @@ html{
     position: absolute;
     width: 100%;
     background-color: rgb(10, 10, 54);
-    left: 10px;
+    left: 0px;
+    padding-left: 10px;
     top: 5px;
     display: none;
 }
 
 #navIcon{
-    color: white;
+    color: var(--darkModeText);
     font-size: 24px;
     border: none;
     cursor: pointer;
@@ -145,7 +167,7 @@ html{
 .profile-img{
     width: 150px;
     height: 150px;
-    border: 2px solid white;
+    border: 2px solid var(--darkModeText);
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -160,13 +182,13 @@ html{
 
 .name{
     font-size: 25px;
-    color: #eee;
+    color: var(--darkModeText);
 }
 
 .sub-heading{
     font-size: 18px;
     margin: 5px 0px;
-    color: #ccc;
+    color: var(--darkModeHeading);
 }
 
 .typer{
@@ -186,7 +208,7 @@ html{
 }
 
 .links a{
-    color: #ddd;
+    color: var(--darkModeLink);
     text-decoration: none;
     font-size: 21px;
     cursor: pointer;
@@ -215,7 +237,7 @@ html{
     font-size: 20px;
 }
 .profile-info .icons a i{
-    color: #dde;
+    color: var(--darkModeLink);
 }
 
 
@@ -236,7 +258,7 @@ html{
 
 #main{
     /*background-color: #81ecec;
-    */background-color: white;
+    */background-color: var(--darkModeWindow);
     transition: all 0.8s ease-in-out;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
@@ -244,7 +266,7 @@ html{
     -o-transition: all 0.8s ease-in-out;
     transform-origin: 0% 0%;
     position: relative;
-    height: 90%;
+    height: 80%;
     width: 90%;
     border-radius: 0px 0px 10px 10px;
     -webkit-border-radius: 0px 0px 10px 10px;
@@ -309,7 +331,7 @@ html{
 .window-nav{
     text-align: left;
     width: 90%;
-    background-color: #eee;
+    background-color: var(--darkModeWindowNav);
 }
 
 .red{
@@ -333,8 +355,8 @@ html{
 /* Terminal */
 #terminal{
     z-index: 100;
-    background-color: black;
-    color: white;
+    background-color: var(--darkModeWindow);
+    color: var(--darkModeText);
     width: 100%;
     height: 100%;
     display: none;
@@ -347,7 +369,7 @@ html{
 .university-name{
     font-size: 28px;
     font-weight: 500;
-    color: #333;
+    color: var(--darkModeHeading);
 }
 .degree{
     font-size: 18px;
@@ -357,7 +379,7 @@ html{
 }
 
 .course-heading{
-    color: #333;
+    color: var(--darkModeHeading);
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 5px;
