@@ -1,35 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-:root{
-    /* --darkModeBg: rgb(24, 23, 23);
-    --darkModeWindowNav: rgb(70, 59, 59);
-    --darkModeWindow: rgb(94, 84, 84);
-    --darkModeHeading: rgb(241, 241, 241);
-    --darkModeText: rgb(255, 255, 255);
-    --darkModeBtn: rgb(197, 191, 219);
-    --darkModeLink: rgb(233, 237, 255); */
-    --darkModeBg: rgb(53, 50, 50);
-    --darkModeWindowNav: rgb(255, 255, 255);
-    --darkModeWindow: rgb(248, 239, 239);
-    --darkModeHeading: rgb(255, 84, 84);
-    --darkModeText: rgb(66, 55, 55);
-    --darkModeBtn: rgb(255, 84, 84);
-    --darkModeLink: rgb(112, 118, 144);
-    --darkModeSideNavBg: #eee;
-    --darkModeActiveBtn: #00c;
-}
-
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
     box-sizing: border-box;
-    color: var(--darkModeText);
+    color: rgb(21, 32, 121);
 }
 
 html{
-    background-color: var(--darkModeBg);
+    background-color: rgb(109, 109, 187);
 }
 
 
@@ -85,7 +66,8 @@ html{
 .heading{
     font-size: 48px;
     font-weight: 700;
-    color: var(--darkModeHeading);
+    /* color: #ee4747; */
+    color: #b763fc;
 }
 
 .info{
@@ -105,16 +87,19 @@ html{
     cursor: pointer;
     margin-bottom: 10px;
     text-decoration: none;
+    margin-top: 30px;
+    font-weight: 700;
+    margin-right: 15px;
 }
 
 .btn-primary{
     border: none;
-    background-color: var(--darkModeBtn);
-    color: #fff;
+    background-color: rgb(110, 110, 192);
+    color: white;
 }
 
 .btn-secondary{
-    color: var(--darkModeBtn);
+    color: rgb(110, 110, 192);
 }
 
 .btn-icon{
@@ -123,9 +108,9 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: var(--darkModeSideNavBg);
+    background-color: rgb(44, 68, 163);
     height: 100vh;
-    color: var(--darkModeText);
+    color: white;
     position: fixed;
     transition: 0.8s all ease-in-out;
     /*display: none;
@@ -146,15 +131,17 @@ html{
 .navIcon{
     position: absolute;
     width: 100%;
-    background-color: rgb(10, 10, 54);
+    background-color: transparent;
     left: 0px;
     padding-left: 10px;
     top: 5px;
     display: none;
 }
-
+.fa-bars{
+    color: white;
+}
 #navIcon{
-    color: var(--darkModeText);
+    color: white;
     font-size: 24px;
     border: none;
     cursor: pointer;
@@ -167,7 +154,7 @@ html{
 .profile-img{
     width: 150px;
     height: 150px;
-    border: 2px solid var(--darkModeText);
+    border: 2px solid white;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -182,13 +169,13 @@ html{
 
 .name{
     font-size: 25px;
-    color: var(--darkModeText);
+    color: #eee;
 }
 
 .sub-heading{
     font-size: 18px;
     margin: 5px 0px;
-    color: var(--darkModeHeading);
+    color: #ccc;
 }
 
 .typer{
@@ -208,7 +195,7 @@ html{
 }
 
 .links a{
-    color: var(--darkModeLink);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 21px;
     cursor: pointer;
@@ -237,7 +224,7 @@ html{
     font-size: 20px;
 }
 .profile-info .icons a i{
-    color: var(--darkModeLink);
+    color: #dde;
 }
 
 
@@ -253,12 +240,12 @@ html{
 }
 
 .btn-wrap{
-    max-width: 395px;
+    max-width: 450px;
 }
 
 #main{
     /*background-color: #81ecec;
-    */background-color: var(--darkModeWindow);
+    */background-color: white;
     transition: all 0.8s ease-in-out;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
@@ -331,7 +318,7 @@ html{
 .window-nav{
     text-align: left;
     width: 90%;
-    background-color: var(--darkModeWindowNav);
+    background-color: #eee;
 }
 
 .red{
@@ -355,8 +342,8 @@ html{
 /* Terminal */
 #terminal{
     z-index: 100;
-    background-color: var(--darkModeWindow);
-    color: var(--darkModeText);
+    background-color: black;
+    color: white;
     width: 100%;
     height: 100%;
     display: none;
@@ -369,17 +356,17 @@ html{
 .university-name{
     font-size: 28px;
     font-weight: 500;
-    color: var(--darkModeHeading);
+    color: rgb(36, 50, 165);
 }
 .degree{
     font-size: 18px;
 }
 .duration{
-    color: rgb(165, 36, 36);
+    color: rgb(21, 32, 121);
 }
 
 .course-heading{
-    color: var(--darkModeHeading);
+    color: rgb(36, 50, 165);
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -393,9 +380,9 @@ html{
 .course-list li{
     margin: 5px 8px;
     list-style-type: none;
-    color: #222;
+    color: rgb(21, 32, 121);
     padding: 2px 5px;
-    border: 1px solid #222;
+    border: 1px solid rgb(21, 32, 121);
     background-color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -424,7 +411,10 @@ html{
         z-index: 1002;
     }
     #main{
-        height: 80%;
+        height: 90%;
+    }
+    #mainContainer{
+        padding-top: 20px;
     }
 }
 

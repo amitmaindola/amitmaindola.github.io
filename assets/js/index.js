@@ -13,7 +13,7 @@ function toggleNav() {
 
 var sections = [];
 // var colors = ["#81ecec", "#fab1a0", "#fdcb6e", "#74b9ff", "#55efc4"];
-// var colors = ["white", "white", "#white", "white", "white"];
+var colors = ["white", "white", "#white", "white", "white"];
 // var colors = ["#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff", "#74b9ff"]
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
@@ -35,12 +35,13 @@ function goToSection(x) {
             const element = sections[i];
             if(i==x){
                 element.style.display = "flex";
-                links[i].style.color="#00c";
+                links[i].style.color="#ccf";
             }
             else{
                 element.style.display="none";
-                links[i].style.color = "var(--darkModeLink)";
+                links[i].style.color = "#fff";
             }
+            main.style.background = colors[x];
         }
     }, 0);
 }
