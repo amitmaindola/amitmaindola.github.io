@@ -1,6 +1,9 @@
+// Hide Loader
+function removeLoader(){
+    document.querySelector(".loader").style.display = "none";
+}
 
 // Navigation Bar in mobile
-
 var open = false;
 const nav = document.querySelector(".nav");
 
