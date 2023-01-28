@@ -90,7 +90,6 @@ html{
     cursor: pointer;
     margin-bottom: 10px;
     text-decoration: none;
-    margin-top: 30px;
     font-weight: 700;
     margin-right: 15px;
 }
@@ -111,7 +110,7 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(3, 3, 80, 0.3);
     height: 100vh;
     color: white;
     position: fixed;
@@ -244,6 +243,8 @@ html{
 
 .btn-wrap{
     max-width: 450px;
+    margin-top: 30px;
+
 }
 
 #main{
@@ -273,6 +274,7 @@ html{
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     height: 100vh;
+    transform-origin: -10% 75%;
 }
 
 #window-nav{

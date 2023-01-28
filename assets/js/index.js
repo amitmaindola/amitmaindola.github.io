@@ -29,6 +29,7 @@ var windowNav = document.getElementById("window-nav");
 
 async function goToSection(x) {
     mainContainer.style.opacity=1;
+    mainContainer.style.transform="scale(1)";
     main.style.opacity=1;
     windowNav.style.opacity=1;
     nav.style.transform = "";
@@ -88,8 +89,7 @@ function maximize() {
 // Exit button
 
 function exit() {
-    main.style.opacity=0;
-    windowNav.style.opacity=0;
+    mainContainer.style.transform = "scale(0)";
 }
 
 
