@@ -7,9 +7,17 @@ function removeLoader(){
 var open = false;
 const nav = document.querySelector(".nav");
 
+const navIcon = document.querySelector(".navIcon")
+
 function toggleNav() {
-    if(!open) nav.style.transform = "translateX(0px)";
-    else nav.style.transform = "translateX(-300px)";
+    if(!open){
+        nav.style.transform = "translateX(0px)";
+        navIcon.style.background = "transparent";
+    }
+    else{
+        nav.style.transform = "translateX(-300px)";
+        navIcon.style.background = "rgba(3, 3, 60, 0.3)";
+    }
     open = open^1;
 }
 

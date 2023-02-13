@@ -17,6 +17,7 @@ html{
 }
 
 
+
 /* Utility Classes */
 
 .flex-row{
@@ -153,7 +154,7 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: rgba(3, 3, 80, 0.3);
+    background-color: rgba(3, 3, 60, 0.3);
     height: 100vh;
     color: white;
     position: fixed;
@@ -179,7 +180,9 @@ html{
     background-color: transparent;
     left: 0px;
     padding-left: 10px;
-    top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(3, 3, 60, 0.3);
     display: none;
 }
 .fa-bars{
@@ -205,9 +208,11 @@ html{
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    background-image: url("../images/index.jpeg");
+    background-image: url("../images/transparent.png");
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: top 10px; */
+    background-position: right -3px bottom -40px;
+    pointer-events: none;
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -257,6 +262,10 @@ html{
     -moz-transform: translateX(10px);
     -ms-transform: translateX(10px);
     -o-transform: translateX(10px);
+}
+
+.links i{
+    color: #ccf;
 }
 
 .profile-info .icons{
@@ -360,6 +369,12 @@ html{
     max-height: 90vh;
 }
 
+#education i, #skills i, #projects i, #positions i{
+    color: #b763fc;
+    display: inline-block;
+    margin-right: 10px;
+}
+
 #span, #text{
     display: inline;
 }
@@ -411,7 +426,8 @@ html{
     font-size: 18px;
 }
 .duration{
-    color: rgb(21, 32, 121);
+    /* color: rgb(21, 32, 121); */
+    color: rgb(138, 102, 102);
 }
 
 .course-heading{
@@ -422,8 +438,8 @@ html{
 }
 
 .course-list i{
-    font-size: 50px;
-    margin: 0px 20px 10px;
+    /* font-size: px; */
+    margin: 0;
 }
 
 .course-list li{
@@ -432,12 +448,19 @@ html{
     color: rgb(21, 32, 121);
     padding: 2px 5px;
     border: 1px solid rgb(21, 32, 121);
-    background-color: white;
+    /* font-weight: 500;
+    /* background-color: white;
+    box-shadow: rgba(21, 32, 121, 0.1) 0px 3px 8px;
+    padding: 5px 10px;  */
+    /* color: white;
+    font-weight: 500;
+    background-color: rgba(110, 110, 192, 0.7);
+    padding: 5px 10px; */
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+}
+
+.education-item{
+    /* padding-left: 15px; */
 }
 
 
@@ -481,3 +504,40 @@ html{
     height: 150px;
     border: 2px solid black;
 }
+
+
+/* SKILL SECTION */
+/* .skill-topic{
+    height: 130px;
+    width: 130px;
+    border: 4px ridge;
+    border-radius: 100%;
+    border-left-color: #589636;
+    border-top-color: #f0db4f;
+    border-right-color: #61DBFB;
+    border-bottom-color: #303030;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    height: ;
+}
+
+.skill-topic-text{
+    transform: rotate(-45deg);
+}
+#line-1{
+    border: 2px solid #589636;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-78px) rotate(-45deg);
+}
+#line-2{
+    border: 2px solid #589636;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+} */
