@@ -200,18 +200,17 @@ html{
 }
 
 .profile-img{
-    width: 150px;
-    height: 150px;
-    border: 2px solid white;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    background-image: url("../images/transparent.png");
+    width: 155px;
+    height: 155px;
+    /* border: 2px solid rgb(44, 44, 44); */
+    border: 5px pink;
+    border-style: solid;
+    border-color: #97bdff rgb(255, 126, 126);
+    border-radius: 100%;
+    background-image: url("../images/newpic.jpg");
     background-repeat: no-repeat;
     /* background-position: top 10px; */
-    background-position: right -3px bottom -40px;
+    /* background-position: right -3px bottom -35px; */
     pointer-events: none;
     background-size: cover;
     margin-bottom: 30px;
