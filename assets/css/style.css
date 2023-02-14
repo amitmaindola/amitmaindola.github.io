@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 
 *{
     margin: 0px;
@@ -76,7 +78,7 @@ html{
 
 .info{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .btn{
@@ -278,6 +280,11 @@ html{
 }
 .profile-info .icons a i{
     color: #dde;
+}
+.profile-info .icons a i:hover{
+    color: #fff;
+    transform-origin: (50%, 50%);
+    transform: scale(1.2);
 }
 
 
@@ -491,18 +498,15 @@ html{
     #mainContainer{
         padding-top: 20px;
     }
+    .heading{
+        font-size: 32px;
+    }
+    .university-name{
+        font-size: 22px;
+    }
 }
 
-.project{
-    height: 300px;
-    border: 2px solid black;
-    padding: 10px;
-}
-.image{
-    width: 180px;
-    height: 150px;
-    border: 2px solid black;
-}
+
 
 
 /* SKILL SECTION */
@@ -540,3 +544,102 @@ html{
     position: absolute;
     left: 50%;
 } */
+
+
+/* Projects Section */
+
+.project-list{
+    margin-top: 30px;
+}
+
+.project{
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* background-color: rgba(210, 210, 255, 0.1); */
+    /* background-color: #f9f9f9; */
+    border: #97bdff solid 1px;
+    padding: 20px 20px 10px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+}
+.image{
+    width: 400px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.project-heading{
+    font-size: 28px;
+    text-align: center;
+    /* font-family: 'Jua', sans-serif; */
+    color: rgb(110, 110, 192);
+}
+
+.project-sub-heading{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(110, 110, 192);
+    margin-bottom: 10px;
+}
+
+.info-text{
+    font-size: 16px;
+    color: #4684ee;
+
+}
+
+.info-heading{
+    font-weight: 400;
+    margin: 0px 0px 10px;
+    font-size: 18px;
+}
+
+.info{
+    text-align: left;
+}
+
+.info-about{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(110, 110, 192);
+    margin-bottom: 10px;
+}
+
+.project li{
+    list-style-type: none;
+    color: rgb(21, 32, 121);
+    padding: 2px 5px;
+    border: 1px solid rgb(21, 32, 121);
+    margin: 3px 5px;
+    /* font-weight: 500;
+    /* background-color: white;
+    box-shadow: rgba(21, 32, 121, 0.1) 0px 3px 8px;
+    padding: 5px 10px;  */
+    /* color: white;
+    font-weight: 500;
+    background-color: rgba(110, 110, 192, 0.7);
+    padding: 5px 10px; */
+    border-radius: 5px;
+}
+
+.tags{
+    font-size: 12px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgb(110, 110, 192);
+}
+
+.project a{
+    color: #4684ee;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+.project i{
+    margin: 0;
+}
+
+.project .buttons{
+    justify-content: center;
+}
