@@ -30,9 +30,9 @@ var colors = ["white", "white", "#white", "white", "white"];
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
 sections.push(document.getElementById("education"));
-sections.push(document.getElementById("positions"));
 sections.push(document.getElementById("skills"));
 sections.push(document.getElementById("projects"));
+sections.push(document.getElementById("positions"));
 
 var main = document.getElementById("main");
 var windowNav = document.getElementById("window-nav");
