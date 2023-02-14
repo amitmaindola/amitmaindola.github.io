@@ -30,12 +30,14 @@ var colors = ["white", "white", "#white", "white", "white"];
 var links = document.querySelectorAll(".navLink");
 sections.push(document.getElementById("about"));
 sections.push(document.getElementById("education"));
+sections.push(document.getElementById("positions"));
 sections.push(document.getElementById("skills"));
 sections.push(document.getElementById("projects"));
-sections.push(document.getElementById("positions"));
 
 var main = document.getElementById("main");
 var windowNav = document.getElementById("window-nav");
+
+var mp = [0,1,3,4,2]
 
 
 async function goToSection(x) {
@@ -50,12 +52,12 @@ async function goToSection(x) {
             const element = sections[i];
             if(i==x){
                 element.style.display = "flex";
-                links[i].style.color="#fff";
+                links[mp[i]].style.color="#fff";
                 // links[i].style.transform = "scale(1.1)";
             }
             else{
                 element.style.display="none";
-                links[i].style.color = "#ccf";
+                links[mp[i]].style.color = "#ccf";
                 // links[i].style.transform = "scale(1)";
             }
             main.style.background = colors[x];

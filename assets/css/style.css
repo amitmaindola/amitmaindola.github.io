@@ -255,6 +255,8 @@ html{
     -moz-transition: 0.3s all ease-in-out;
     -ms-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
 }
 
 .links a:hover{
