@@ -3,6 +3,23 @@ function removeLoader(){
     document.querySelector(".loader").style.display = "none";
 }
 
+// Smooth Scrolling
+let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+for (let item of anchorlinks) { // relitere 
+    item.addEventListener('click', (e)=> {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
+}
+
+  
 // Navigation Bar in mobile
 var open = false;
 const nav = document.querySelector(".nav");
@@ -51,12 +68,12 @@ async function goToSection(x) {
         for (let i = 0; i < sections.length; i++) {
             const element = sections[i];
             if(i==x){
-                element.style.display = "flex";
+                // element.style.display = "flex";
                 links[mp[i]].style.color="#fff";
                 // links[i].style.transform = "scale(1.1)";
             }
             else{
-                element.style.display="none";
+                // element.style.display="flex";
                 links[mp[i]].style.color = "#ccf";
                 // links[i].style.transform = "scale(1)";
             }

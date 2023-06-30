@@ -13,11 +13,12 @@
 
 html{
     /* background-color: #4481eb; */
-    background-image: url('../images/bg.jpg');
+    background-image: linear-gradient(rgba(3, 3, 60, 0.3) , rgba(3, 3, 60, 0.3)), url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar { 
@@ -64,7 +65,8 @@ html{
 
 .full-size{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    padding: 20px 0px;
 }
 
 .sub-container{
@@ -162,14 +164,14 @@ html{
 /* navigation bar */
 .nav{
     min-width: 280px;
-    background-color: rgba(3, 3, 60, 0.3);
+    /* background-color: rgba(3, 3, 60, 0.3); */
     height: 100vh;
     color: white;
     position: fixed;
     transition: 0.3s all ease-in-out;
     /*display: none;
     */
-    padding: 10% 0px;
+    padding: 12vh 0px;
     -webkit-transition: 0.3s all ease-in-out;
     -moz-transition: 0.3s all ease-in-out;
     -ms-transition: 0.3s all ease-in-out;
@@ -190,7 +192,7 @@ html{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgba(3, 3, 60, 0.3);
+    background-color: rgb(255, 255, 255);
     display: none;
 }
 .fa-bars{
@@ -215,7 +217,7 @@ html{
     border-style: solid;
     border-color: #97bdff rgb(255, 126, 126);
     border-radius: 100%;
-    background-image: url("../images/newpic.jpg");
+    background-image:  url("../images/newpic.jpg");
     background-repeat: no-repeat;
     /* background-position: top 10px; */
     /* background-position: right -3px bottom -35px; */
@@ -367,20 +369,13 @@ html{
     -o-border-radius: 100%;
 }
 
-#about{
-    overflow-y: scroll;
-    height: calc(100vh-25px);
-    /* display: none; */
-    /* background-color: #e7ecff; */
+#about, #education, #skills, #projects, #experience{
+    /* overflow-y: scroll; */
+    background-color: white;
+    margin-bottom: 4px;
 }
 
-#education, #skills, #projects, #positions{
-    overflow-y: scroll;
-    display: none;
-    /* max-height: 90vh; */
-}
-
-#education i, #skills i, #projects i, #positions i{
+#education i, #skills i, #projects i, #experience i{
     color: #b763fc;
     display: inline-block;
     margin-right: 10px;
@@ -564,9 +559,10 @@ html{
     border: #97bdff solid 1px;
     padding: 20px 20px 10px;
     border-radius: 5px;
-    width: 90%;
+    min-width: 250px;
     max-width: 400px;
     margin: 10px;
+    flex: 1;
 }
 .image{
     width: 400px;
