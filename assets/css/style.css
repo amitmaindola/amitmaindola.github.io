@@ -16,6 +16,12 @@ html{
     background-image: url('../images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 
@@ -318,13 +324,13 @@ html{
     -o-transition: all 0.3s ease-in-out;
     transform-origin: 0% 0%;
     position: relative;
-    height: 80%;
-    width: 90%;
-    border-radius: 0px 0px 10px 10px;
+    height: 100%;
+    width: 100%;
+    /* border-radius: 0px 0px 10px 10px;
     -webkit-border-radius: 0px 0px 10px 10px;
     -moz-border-radius: 0px 0px 10px 10px;
     -ms-border-radius: 0px 0px 10px 10px;
-    -o-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px; */
 }
 
 #mainContainer{
@@ -343,12 +349,9 @@ html{
     -moz-transition: 0.3s all ease-in-out;
     -ms-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+    /* border-radius: 10px 10px 0px 0px; */
     padding-left: 10px;
+    display: none;
 }
 
 #window-nav i{
@@ -366,7 +369,7 @@ html{
 
 #about{
     overflow-y: scroll;
-    max-height: 90vh;
+    height: calc(100vh-25px);
     /* display: none; */
     /* background-color: #e7ecff; */
 }
@@ -374,7 +377,7 @@ html{
 #education, #skills, #projects, #positions{
     overflow-y: scroll;
     display: none;
-    max-height: 90vh;
+    /* max-height: 90vh; */
 }
 
 #education i, #skills i, #projects i, #positions i{
@@ -389,7 +392,7 @@ html{
 
 .window-nav{
     text-align: left;
-    width: 90%;
+    width: 100%;
     background-color: #eee;
 }
 
@@ -495,10 +498,10 @@ html{
         z-index: 1002;
     }
     #main{
-        height: 90%;
+        /* height: 90%; */
     }
     #mainContainer{
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
     .heading{
         font-size: 32px;
