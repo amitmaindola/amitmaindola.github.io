@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #container {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      white-space: nowrap;
+    }
+
+    .scroll-item {
+      flex: 0 0 auto;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+
+    /* Add your own styles for content inside .scroll-item */
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="scroll-item">
+      <!-- Your content for the first item -->
+    </div>
+    <div class="scroll-item">
+      <!-- Your content for the second item -->
+    </div>
+    <!-- Add more .scroll-item divs as needed -->
+  </div>
+
+  <script>
+    // Optional: Add content dynamically using JavaScript
+    for (let i = 0; i < 5; i++) {
+      const newItem = document.createElement('div');
+      newItem.className = 'scroll-item';
+      // Add your content to newItem
+      document.getElementById('container').appendChild(newItem);
+    }
+  </script>
+</body>
+</html>

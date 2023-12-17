@@ -14,6 +14,7 @@
 html{
     /* background-color: #4481eb; */
     background-image: linear-gradient(rgba(3, 3, 60, 0.3) , rgba(3, 3, 60, 0.3)), url('../images/bg.jpg');
+    /* background-color: #272121; */
     background-size: cover;
     background-repeat: no-repeat;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -217,7 +218,7 @@ html{
     border-style: solid;
     border-color: #97bdff rgb(255, 126, 126);
     border-radius: 100%;
-    background-image:  url("../images/newpic.jpg");
+    background-image:  url("../images/profile-pic-new-2.png");
     background-repeat: no-repeat;
     /* background-position: top 10px; */
     /* background-position: right -3px bottom -35px; */
@@ -316,9 +317,8 @@ html{
 }
 
 #main{
-    /*background-color: #81ecec;
-    */
-    background: rgba(255, 255, 255, 1);
+    background-color: #000;
+    /* background: rgba(255, 255, 255, 1); */
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -326,8 +326,14 @@ html{
     -o-transition: all 0.3s ease-in-out;
     transform-origin: 0% 0%;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    
+/* 
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;  */
+
     /* border-radius: 0px 0px 10px 10px;
     -webkit-border-radius: 0px 0px 10px 10px;
     -moz-border-radius: 0px 0px 10px 10px;
@@ -371,7 +377,7 @@ html{
 
 #about, #education, #skills, #projects, #experience{
     /* overflow-y: scroll; */
-    background-color: white;
+    background-color: black;
     margin-bottom: 4px;
 }
 
@@ -643,4 +649,31 @@ html{
 
 .project .buttons{
     justify-content: center;
+}
+
+/* Latest changes */
+
+.landing-image{
+    /* background-color: black; */
+    border-radius: 100%;
+    position: relative;
+    /* background-color: black; */
+    width: 100%;
+}
+
+.image-cover{
+    border: 5px solid orange;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.about-cover{
+    display: flex;
+    /* border: 10px solid; */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-right{
+    margin-left: 50px;
 }
