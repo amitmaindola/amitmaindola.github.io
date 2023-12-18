@@ -54,7 +54,7 @@ sections.push(document.getElementById("positions"));
 var main = document.getElementById("main");
 var windowNav = document.getElementById("window-nav");
 
-var mp = [0,1,3,4,2]
+var mp = [0,1,2,3,4]
 
 
 async function goToSection(x) {
@@ -207,3 +207,28 @@ function Screen() {
 }
 
 Screen();
+
+
+// Skills Toggle
+const toggleSkill = (index) => {
+    if(index==0){
+        document.getElementById("technical").style.display = "flex";
+        document.getElementById("soft").style.display = "none";
+
+        document.getElementById("switch-to-tech").style.color = "#1B4242";
+        document.getElementById("switch-to-tech").style.backgroundColor = "#D6D5A8";
+
+        document.getElementById("switch-to-soft").style.color = "#D6D5A8";
+        document.getElementById("switch-to-soft").style.backgroundColor = "#1B4242";
+    }
+    else{
+        document.getElementById("technical").style.display = "none";
+        document.getElementById("soft").style.display = "flex";
+
+        document.getElementById("switch-to-soft").style.color = "#1B4242";
+        document.getElementById("switch-to-soft").style.backgroundColor = "#D6D5A8";
+
+        document.getElementById("switch-to-tech").style.color = "#D6D5A8";
+        document.getElementById("switch-to-tech").style.backgroundColor = "#1B4242";
+    }
+}

@@ -8,13 +8,13 @@
     font-family: 'Ubuntu', sans-serif;
     background-color: transparent;
     box-sizing: border-box;
-    color: rgb(21, 32, 121);
+    color: #9EC8B9;
 }
 
 html{
     /* background-color: #4481eb; */
-    background-image: linear-gradient(rgba(3, 3, 60, 0.3) , rgba(3, 3, 60, 0.3)), url('../images/bg.jpg');
-    /* background-color: #272121; */
+    /* background-image: linear-gradient(rgba(3, 3, 60, 0.3) , rgba(3, 3, 60, 0.3)), url('../images/bg.jpg'); */
+    background-color: #092635;
     background-size: cover;
     background-repeat: no-repeat;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -72,6 +72,7 @@ html{
 
 .sub-container{
     padding: 30px;
+    margin: auto;
 }
 
 .last{
@@ -82,7 +83,7 @@ html{
     font-size: 48px;
     font-weight: 700;
     /* color: #ee4747; */
-    color: #b763fc;
+    color: #FCE9F1;
 }
 
 .info{
@@ -108,12 +109,12 @@ html{
 
 .btn-primary{
     border: none;
-    background-color: rgb(110, 110, 192);
+    background-color: #576CBC;
     color: white;
 }
 
 .btn-secondary{
-    color: rgb(110, 110, 192);
+    color: #A5D7E8;
 }
 
 .btn-icon{
@@ -193,7 +194,7 @@ html{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     display: none;
 }
 .fa-bars{
@@ -245,6 +246,7 @@ html{
     margin-top: 5px;
     letter-spacing: 2px;
     height: 50px;
+    color: #FFD95A;
     /* font-weight: 500; */
 }
 
@@ -377,12 +379,13 @@ html{
 
 #about, #education, #skills, #projects, #experience{
     /* overflow-y: scroll; */
-    background-color: black;
+    /* background-color: rgb(34, 31, 31); */
+    background-color: #1B4242;
     margin-bottom: 4px;
 }
 
 #education i, #skills i, #projects i, #experience i{
-    color: #b763fc;
+    color: #F2F1EB;
     display: inline-block;
     margin-right: 10px;
 }
@@ -432,18 +435,18 @@ html{
 .university-name{
     font-size: 28px;
     font-weight: 500;
-    color: rgb(36, 50, 165);
+    color: #A5D7E8;
 }
 .degree{
     font-size: 18px;
 }
 .duration{
     /* color: rgb(21, 32, 121); */
-    color: rgb(138, 102, 102);
+    color: #D6D5A8;
 }
 
 .course-heading{
-    color: rgb(36, 50, 165);
+    color: #A5D7E8;
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -457,9 +460,9 @@ html{
 .course-list li{
     margin: 5px 8px;
     list-style-type: none;
-    color: rgb(21, 32, 121);
+    color: #9EC8B9;
     padding: 2px 5px;
-    border: 1px solid rgb(21, 32, 121);
+    border: 1px solid #9EC8B9;
     /* font-weight: 500;
     /* background-color: white;
     box-shadow: rgba(21, 32, 121, 0.1) 0px 3px 8px;
@@ -490,12 +493,14 @@ html{
         -o-transform: translateX(-300px);
         z-index: 1001;
         /* background-color: rgb(44, 68, 163); */
-        background:  linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.2)), url('../images/bg.jpg');
+        background-color: #092635;
+        /* background:  linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.2)), url('../images/bg.jpg'); */
         background-size: cover;
         background-repeat: no-repeat;
     }
     .navIcon{
         display: block;
+        background-color: transparent;
         z-index: 1002;
     }
     #main{
@@ -509,6 +514,17 @@ html{
     }
     .university-name{
         font-size: 22px;
+    }
+    .project{
+        flex-grow: 1!important;
+    }
+    .about-cover{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-right{
+        margin-left: 0px!important;
+        margin-top: 20px;
     }
 }
 
@@ -556,19 +572,22 @@ html{
 
 .project-list{
     margin-top: 30px;
+    justify-content: left;
 }
 
 .project{
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     /* background-color: rgba(210, 210, 255, 0.1); */
     /* background-color: #f9f9f9; */
-    border: #97bdff solid 1px;
+    /* border: #97bdff solid 1px; */
     padding: 20px 20px 10px;
     border-radius: 5px;
     min-width: 250px;
-    max-width: 400px;
+    width: 260px;
     margin: 10px;
-    flex: 1;
+    flex-shrink: 1;
+    flex-grow: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 .image{
     width: 400px;
@@ -581,19 +600,21 @@ html{
     font-size: 28px;
     text-align: center;
     /* font-family: 'Jua', sans-serif; */
-    color: rgb(110, 110, 192);
+    /* color: rgb(110, 110, 192); */
+    color: #A5D7E8;
 }
 
 .project-sub-heading{
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(110, 110, 192);
+    color: #D6D5A8;
+    border-bottom: 1px solid #576CBC;
     margin-bottom: 10px;
 }
 
 .info-text{
     font-size: 16px;
-    color: #4684ee;
+    color: #9EC8B9;
 
 }
 
@@ -601,6 +622,7 @@ html{
     font-weight: 400;
     margin: 0px 0px 10px;
     font-size: 18px;
+    color: #A5D7E8;
 }
 
 .info{
@@ -609,15 +631,15 @@ html{
 
 .info-about{
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(110, 110, 192);
+    border-bottom: 1px solid #576CBC;
     margin-bottom: 10px;
 }
 
 .project li{
     list-style-type: none;
-    color: rgb(21, 32, 121);
+    color: #F5E8C7;
     padding: 2px 5px;
-    border: 1px solid rgb(21, 32, 121);
+    border: 1px solid #F5E8C7;
     margin: 3px 5px;
     /* font-weight: 500;
     /* background-color: white;
@@ -633,7 +655,7 @@ html{
 .tags{
     font-size: 12px;
     padding-bottom: 13px;
-    border-bottom: 1px solid rgb(110, 110, 192);
+    border-bottom: 1px solid #576CBC;
 }
 
 .project a{
@@ -656,13 +678,12 @@ html{
 .landing-image{
     /* background-color: black; */
     border-radius: 100%;
-    position: relative;
     /* background-color: black; */
     width: 100%;
 }
 
 .image-cover{
-    border: 5px solid orange;
+    border: 5px solid #9EC8B9;
     padding: 5px;
     border-radius: 100%;
 }
@@ -676,4 +697,88 @@ html{
 
 .about-right{
     margin-left: 50px;
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    color: #D6D5A8;
+}
+
+.option{
+    width: 45%;
+    max-width: 180px;
+    text-align: center;
+    padding: 8px ;
+    border: 2px #D6D5A8 solid;
+    margin: 2px;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.option-1{
+    border-radius: 30px 0 0 30px;
+    color: #1B4242;
+    background-color: #D6D5A8;
+}
+.option-1 i, .option-2 i{
+    color: #1B4242!important;
+    color: #D6D5A8;
+}
+
+.option-2{
+    border-radius: 0 30px 30px 0;
+}
+
+.skills-wrapper{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-box{
+    /* height: 300px; */
+    /* min-width: 200px; */
+    /* border: 2px #fff solid; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /* max-width: 250px; */
+    width: 225px;
+    flex: 1;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+/* .skill-box:active{
+    position: absolute;
+} */
+
+.skill-icon{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.skill-icon i{
+    color: #A5D7E8!important;
+}
+
+.skill-heading{
+    font-size: 28px;
+    color: #A5D7E8;
+}
+
+.skill-info{
+    margin: 10px 0px;
+    color: #9EC8B9;
+
+}
+
+#soft{
+    display: none;
 }
